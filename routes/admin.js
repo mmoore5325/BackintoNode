@@ -14,13 +14,15 @@ router.get('/add-product',(req, res, next) => {
 
 router.post('/add-product',(req,res,next)=>{
     //this pushes to the products empty array the post of the product
-    products.push({title: req.body.title});
+    products.push({title: req.body.title, descriptions: req.body.descriptions});
     // descriptions.push({descriptions: req.body.descriptions});
-    descriptions.push({descriptions: req.body.descriptions});
+    // descriptions.push({descriptions: req.body.descriptions});
     res.redirect('/');
 });
 
 exports.routes = router;
 exports.products = products;
+exports.descriptions = descriptions;
+
 // module.exports = router;
 
