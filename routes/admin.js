@@ -11,7 +11,7 @@ const price = [];
 router.get('/add-product',(req, res, next) => {
     // res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
     //Now we render add-product.pug
-    res.render('add-product', {pageTitle: 'Add Product'});
+    res.render('add-product', {pageTitle: 'Add Product', path: '/admin/add-product'});
     
 });
 
