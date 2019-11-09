@@ -16,7 +16,7 @@ router.get('/', (req, res, next) => {
     console.log(adminData.products);
     console.log(adminData.descriptions);
     
-    res.render('shop', {prods: products, desc: descriptions, docTitle: '$h0:p'});
+    res.render('shop', {prods: products, desc: descriptions, path: '/', pageTitle: '$h0:p'});
 });
 
 //router.get('/',(req, res, next) => {
