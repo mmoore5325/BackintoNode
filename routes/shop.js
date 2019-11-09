@@ -12,7 +12,7 @@ const router = express.Router();
 router.get('/', (req, res, next) => {
     const products = adminData.products;
     const descriptions = adminData.descriptions;
-    console.log("TEA:LKJRFSAL:ALK:");
+    const price = adminData.price;
     console.log(adminData.products);
     console.log(adminData.descriptions);
     
